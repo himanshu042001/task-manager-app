@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+/* Main styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Light gray */
+  color: #333; /* Dark gray */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  color: #2c3e50; /* Dark blue */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Task Form styles */
+.task-form {
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.task-form input,
+.task-form textarea,
+.task-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #2c3e50; /* Dark blue */
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-form select {
+  appearance: none;
+}
+
+.task-form button {
+  padding: 10px 20px;
+  background-color: #27ae60; /* Green */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-form button:hover {
+  background-color: #219653; /* Darker green */
+}
+
+/* Task List styles */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  background-color: #ecf0f1; /* Lighter gray */
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-item h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #2c3e50; /* Dark blue */
+}
+
+.task-item p {
+  margin: 0;
+  color: #555; /* Slightly darker gray */
+}
+
+.task-item button {
+  padding: 5px 10px;
+  background-color: #c0392b; /* Dark red */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.task-item button:hover {
+  background-color: #a5281a; /* Darker red */
+}
+
+/* Completed Task styles */
+.task-item.completed {
+  background-color: #d5dbdb; /* Light gray */
+}
+
+.task-item.completed h3 {
+  text-decoration: line-through;
+  color: #888; /* Light gray */
 }
